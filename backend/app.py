@@ -20,12 +20,12 @@ socketio = SocketIO(
 )
 
 # 注册蓝图
-from backend.routes.algorithm_route import algorithm_bp
+from routes.algorithm_route import algorithm_bp
 
 app.register_blueprint(algorithm_bp)
 
 # 注册 SocketIO 事件
-from backend.routes.algorithm_route import register_socket_events
+from routes.algorithm_route import register_socket_events
 
 register_socket_events(socketio)
 
