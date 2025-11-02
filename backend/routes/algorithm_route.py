@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from flask_socketio import emit
-from backend.services.algorithm_service import handle_algorithm_request
+from services.algorithm_service import handle_algorithm_request
 import logging
 
 logger = logging.getLogger(__name__)
