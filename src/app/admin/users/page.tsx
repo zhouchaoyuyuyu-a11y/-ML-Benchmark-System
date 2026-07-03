@@ -37,7 +37,7 @@ export default async function AdminUsersPage() {
   const matrix: { capability: string; values: string[] }[] = [
     {
       capability: "Daily concierge chats",
-      values: [`${s.guest_daily_chat}/day trial`, `${s.free_daily_chat}/day`, `${s.lite_daily_chat}–${s.pro_daily_chat}/day`, "Contracted (200/day seeded)", "Unmetered"],
+      values: [`${s.guest_daily_chat}/day trial`, `${s.free_daily_chat}/day`, `${s.lite_daily_chat}–${s.pro_daily_chat}/day`, "Contracted allowance", "Unmetered"],
     },
     {
       capability: "Structured proposals",
