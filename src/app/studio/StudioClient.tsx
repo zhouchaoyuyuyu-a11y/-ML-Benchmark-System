@@ -627,8 +627,8 @@ export default function StudioClient({ zh = false }: { zh?: boolean }) {
           </Button>
           <p className="text-xs text-mist">
             {zh
-              ? "先保存对象——它是否成为实体，之后在 Trade 里由你决定。"
-              : "Save the object first — whether it becomes physical is your call later, in Trade."}
+              ? "先保存对象——它是否成为实体，由你在 Trade 里决定。"
+              : "Save the object first — whether it becomes physical is your call, made in Trade whenever you choose."}
           </p>
         </div>
 

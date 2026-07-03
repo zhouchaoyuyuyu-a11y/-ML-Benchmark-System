@@ -100,7 +100,7 @@ export default async function StudioPage() {
         description={
           zh
             ? "Studio 是 ZOTAIX 定制链的视觉层：瓶身、标签、包装、香氛情绪、情绪卡片与数字徽章，全部在浏览器里实时预览。你在这里做的每一个选择都可以存为草案——是否成为实体，之后再决定。"
-            : "The Studio is the visual layer of the ZOTAIX chain: bottle, label, packaging, fragrance mood, emotional cards, and digital badges, all previewed live in the browser. Every choice you make here can be saved as a draft — whether it becomes physical is a later decision."
+            : "The Studio is the visual layer of the ZOTAIX chain: bottle, label, packaging, fragrance mood, emotional cards, and digital badges, all previewed live in the browser. Every choice you make here can be saved as a draft — whether it becomes physical is a separate decision, made on your terms."
         }
       >
         <ButtonLink href="#configurator" variant="gold">
