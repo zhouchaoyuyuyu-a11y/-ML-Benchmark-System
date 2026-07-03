@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- ZOTAIX web app (Next.js) -------------------------------------------
+# The Python template above ignores generic dirs like lib/, build/ and env/;
+# re-include the web app's source tree explicitly.
+!/src/
+!/src/**
+node_modules/
+.next/
+out/
+.vercel
+*.tsbuildinfo
+.env*.local

@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* ZOTAIX design tokens — premium, restrained, technological, orderly. */
+@theme {
+  --color-ink: #0a0c11;
+  --color-obsidian: #12151d;
+  --color-veil: #1c202b;
+  --color-hairline: #262b38;
+  --color-porcelain: #ece9e2;
+  --color-mist: #9aa0ad;
+  --color-gold: #c8a962;
+  --color-gold-deep: #9d8244;
+  --color-supply: #8b93ff;
+  --color-jade: #58b98d;
+  --color-ember: #d0685f;
+
+  --font-display: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+  --font-body: ui-sans-serif, system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-porcelain);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-gold) 35%, transparent);
+}
+
+/* Display serif for headings */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
+
+/* Hairline card */
+.zx-card {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--color-obsidian) 92%, white 2%), var(--color-obsidian));
+  border: 1px solid var(--color-hairline);
+  border-radius: 0.75rem;
+}
+
+.zx-card-hover {
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.zx-card-hover:hover {
+  border-color: color-mix(in srgb, var(--color-gold) 55%, var(--color-hairline));
+  transform: translateY(-2px);
+}
+
+/* Gold meridian divider */
+.zx-meridian {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--color-gold) 60%, transparent), transparent);
+}
+
+/* Subtle grid backdrop for hero sections */
+.zx-grid-bg {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--color-hairline) 40%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--color-hairline) 40%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 75%);
+}
+
+/* Skeleton shimmer */
+@keyframes zx-shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.zx-skeleton {
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, var(--color-veil) 25%, var(--color-hairline) 50%, var(--color-veil) 75%);
+  background-size: 800px 100%;
+  animation: zx-shimmer 1.6s infinite linear;
+}
+
+/* Slow rotation for the Studio bottle preview */
+@keyframes zx-rotate {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+.zx-rotate-slow {
+  animation: zx-rotate 14s infinite linear;
+  transform-style: preserve-3d;
+}
+
+/* Fade-up entrance */
+@keyframes zx-fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.zx-fade-up {
+  animation: zx-fade-up 0.7s ease both;
+}
