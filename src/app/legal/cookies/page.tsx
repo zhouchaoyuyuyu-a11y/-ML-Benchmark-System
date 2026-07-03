@@ -81,7 +81,7 @@ export default async function CookiesPage() {
 
       <Sec n={1} title={zh ? "什么是 Cookie 与浏览器存储" : "What cookies and browser storage are"}>
         <p>
-          Cookies are small text entries a website asks your browser to keep and send back on later requests, so the
+          Cookies are small text entries a website asks your browser to keep and send back on subsequent requests, so the
           site can recognize your session or your preferences. Browser storage (localStorage and sessionStorage) works
           similarly but stays on your device and is never transmitted automatically. ZOTAIX uses both, sparingly, for
           the exact purposes listed below and for nothing else.
