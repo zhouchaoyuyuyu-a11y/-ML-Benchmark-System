@@ -33,37 +33,37 @@ export default async function CoCreateRulesPage() {
     {
       count: s.co_create_public_threshold,
       meaning:
-        "Public page. Ten supporters open the project's public co-creation page: the concept, tags, progress bar, and voting become visible to everyone.",
+        "Public page. The project's public co-creation page opens: the concept, tags, progress bar, and voting become visible to everyone.",
     },
     {
       count: s.co_create_review_threshold,
       meaning:
-        "Formal review. Thirty reservations move the project into the full compliance and feasibility review queue, with atelier input on producibility.",
+        "Formal review. The project moves into the full compliance and feasibility review queue, with atelier input on producibility.",
     },
     {
       count: s.co_create_label_threshold,
       meaning:
-        "Label round. Fifty reservations unlock collective label and gift-box theming: participants vote on label variants and packaging directions.",
+        "Label round. Collective label and gift-box theming unlocks: participants vote on label variants and packaging directions.",
     },
     {
       count: s.co_create_flavor_threshold,
       meaning:
-        "Flavor review. One hundred bottles unlock flavor-direction review with the atelier — the stage where the liquid direction is matched to a producible batch profile.",
+        "Flavor review. Flavor-direction review with the atelier unlocks — the stage where the liquid direction is matched to a producible batch profile.",
     },
     {
       count: s.co_create_enterprise_threshold,
       meaning:
-        "Enterprise scale. Three hundred units bring enterprise-grade gifting review, staggered logistics planning, and invoicing support.",
+        "Enterprise scale. The project gains enterprise-grade gifting review, staggered logistics planning, and invoicing support.",
     },
     {
       count: s.co_create_supply_threshold,
       meaning:
-        "Dedicated run. Five hundred units qualify the project for a dedicated supply run with extended aftercare and a replenishment window in Reserve.",
+        "Dedicated run. The project qualifies for a dedicated supply run with extended aftercare and a replenishment window in Reserve.",
     },
     {
       count: s.co_create_partner_threshold,
       meaning:
-        "Partner series. One thousand units open partner-level collaboration: a named series, long-term supply planning, and a revenue-share discussion with the founder under a written agreement.",
+        "Partner series. Partner-level collaboration opens: a named series, long-term supply planning, and a revenue-share discussion with the founder under a written agreement.",
     },
   ];
 
