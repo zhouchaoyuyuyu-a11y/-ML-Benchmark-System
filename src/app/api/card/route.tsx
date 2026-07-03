@@ -30,7 +30,7 @@ export async function GET(req: Request) {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
           <div style={{ fontSize: 20, color: "#c8a962", letterSpacing: 3, fontFamily: "sans-serif" }}>{keywords}</div>
-          <div style={{ fontSize: 46, lineHeight: 1.3, fontStyle: "italic", maxWidth: 760 }}>“{copy}”</div>
+          <div style={{ fontSize: 46, lineHeight: 1.3, fontStyle: "italic", maxWidth: 760 }}>{`“${copy}”`}</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
           <div style={{ height: 2, background: "linear-gradient(90deg, transparent, #c8a962, transparent)" }} />
