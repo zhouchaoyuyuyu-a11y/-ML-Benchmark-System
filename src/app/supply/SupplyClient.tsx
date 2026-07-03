@@ -382,7 +382,18 @@ export default function SupplyClient({ zh = false }: { zh?: boolean }) {
       {error && !loading && <Notice tone="ember">{error}</Notice>}
 
       {gate && !loading && (
-        <Notice tone="supply" title={zh ? "差一个免费账号" : "One free account away"}>
+        <Notice
+          tone="supply"
+          title={
+            gate.hint === "/membership"
+              ? zh
+                ? "额度会自动恢复——或者跃迁一级"
+                : "Your allowance renews on its own — or leap a level"
+              : zh
+                ? "差一个免费账号"
+                : "One free account away"
+          }
+        >
           <p>{gate.message}</p>
           <div className="mt-3 flex flex-wrap items-center gap-3">
             {gate.hint === "/membership" ? (
