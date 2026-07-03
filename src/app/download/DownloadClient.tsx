@@ -160,7 +160,7 @@ export default function DownloadClient({ zh = false }: { zh?: boolean }) {
         {guides.map((g, i) => {
           const open = openGuide === i;
           return (
-            <div key={g.id} className="zx-card overflow-hidden !p-0">
+            <div key={g.id} className="zx-card overflow-hidden">
               <button
                 type="button"
                 onClick={() => setOpenGuide(open ? null : i)}
